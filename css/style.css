@@ -16,7 +16,8 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Cyrl 300';
+  font-weight: 300;
 }
 
 img {
@@ -87,6 +88,8 @@ img {
 
 .navbar__button {
   margin-left: 30px;
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: 300;
 }
 
 .navbar__phone {
@@ -96,6 +99,8 @@ img {
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: 300;
 }
 
 @media (max-width: 768px) {
@@ -124,19 +129,21 @@ img {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   padding-right: 120px;
-  font-family: 'Museo Sans Cyrl 700';
 }
 
 .hero-text__title {
   font-size: 41px;
-  font-weight: 700;
   line-height: 55px;
   margin-bottom: 40px;
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: 300;
 }
 
 .hero-text__subtitle {
   font-size: 20px;
   font-weight: 500;
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: 300;
 }
 
 .hero-list {

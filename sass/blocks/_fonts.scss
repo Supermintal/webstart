@@ -17,3 +17,12 @@
 	font-weight: 300;
 	font-style: normal;
 }
+
+@mixin  reg {
+	font-family: 'Museo Sans Cyrl 300';
+	font-weight: 300;
+}
+@mixin bold {
+	font-family: 'Museo Sans Cyrl 700';
+	font-weight: 300;
+}

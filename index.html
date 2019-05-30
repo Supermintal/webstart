@@ -22,7 +22,7 @@
 						<span class="navbar__address">Калуга, Москва, МО</span>
 						<a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
 					</div>
-					<button class="button navbar__button">Перезвоните мне</button>
+					<button class="button navbar__button" id="button">Перезвоните мне</button>
 				</div>
 			</div>
 		</div>
@@ -52,7 +52,7 @@
 								<div class="hero-list__image">
 									<img src="img/hero/paint-board-and-brush.png">
 								</div>
-								<span class="hero-list__text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</span>
+								<span class="hero-list__text">Предложим более 100 вариантов <br>исполнения дизайна Вашего жилья</span>
 							</li>
 						</ul>
 					</div>
@@ -62,7 +62,35 @@
 				</div>
 			</div>
 		</section>
+		<section class="offer section">
+			<div class="container">
+				<div class="offer-block">
+					<h2 class="section-title offer__title">Мы бесплатно разработаем<br> дизайн-проект Вашего жилья<br> и реализуем
+						его!</h2>
+					<span class="section-subtitle offer__subtitle">Оставьте заявку на разработку<br> бесплатного
+						дизайн-проекта!</span>
+					<form action="#" class="form offer__form">
+						<input type="text" class="input offer__input" placeholder="Ваше имя">
+						<input type="tel" class="input offer__input" placeholder="Ваш телефон">
+						<button class="button offer__button">Получить бесплатный дизайн-проект</button>
+					</form>
+					<div class="offer-class">
+						<span class="offer-class__text">Наш менеджер перезвонит Вам в течение 60 секунд</span>
+						<div class="down offer__down"> 
+							<span class="offer-class__text">или перезвоните нам сами</span>
+							<a href="tel:+7(495)42-251-31" class="offer__phone">+7 (495) 42-251-31</a>
+						</div>
+					</div>
+			</div>
+		</section>
 	</main>
-</body>
 
+	<div class="modal" id="modal">
+		<div class="modal-dialog">
+			<button class="modal-dialog__close" id="close">&times;</button>
+			<h4 class="modal-dialog__title">Всплывающее окно</h4>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
 </html>

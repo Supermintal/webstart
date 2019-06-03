@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ремонт квартир</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -76,11 +77,45 @@
 					</form>
 					<div class="offer-class">
 						<span class="offer-class__text">Наш менеджер перезвонит Вам в течение 60 секунд</span>
-						<div class="down offer__down"> 
+						<div class="down offer__down">
 							<span class="offer-class__text">или перезвоните нам сами</span>
 							<a href="tel:+7(495)42-251-31" class="offer__phone">+7 (495) 42-251-31</a>
 						</div>
 					</div>
+				</div>
+		</section>
+		<section class="section portfolio">
+			<div class="container">
+				<h2 class="section-title portfolio__title">Работая с 2007 года,<br>
+					мы сделали более 500 ремонтов в квартирах и домах</h2>
+				<div class="slider">
+					<div class="slider__item">
+						<img class=" slider__image" src="img/portfolio/slider-1.jpg" alt="">
+					</div>
+					<div class="slider__item">
+						<img class=" slider__image" src="img/portfolio/slider-2.jpg" alt="">
+					</div>
+					<div class="slider__item">
+						<img class=" slider__image" src="img/portfolio/slider-3.jpg" alt="">
+					</div>
+					<div class="slider__item">
+						<img class=" slider__image" src="img/portfolio/slider-1.jpg" alt="">
+					</div>
+					<div class="slider__item">
+						<img class=" slider__image" src="img/portfolio/slider-2.jpg" alt="">
+					</div>
+					<div class="slider__item">
+						<img class="slider__image" src="img/portfolio/slider-3.jpg" alt="">
+					</div>
+				</div>
+				<div class="arrows portfolio__arrows">
+					<div class="arrows__left">
+						<img src="img/portfolio/left-arrow.png">
+					</div>
+					<div class="arrows__right">
+						<img src="img/portfolio/right-arrow.png">
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -97,5 +132,46 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="js/modal.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script>
+		 $(document).ready(function() {
+			 $('.slider').slick({
+				slidesToShow: 3,
+				prevArrow: $('.arrows__left'),
+				nextArrow: $('.arrows__right'),
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 1200,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 576,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 320,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			 });
+		 });
+	</script>
 </body>
+
 </html>

@@ -12,6 +12,10 @@ img
 .container
 	width: 1170px
 	margin: auto
+.arrows
+	&__left, &__right
+		&:hover
+			cursor: pointer
 @media (max-width: 1200px)
 	.container
 		width: 760px
@@ -32,6 +36,7 @@ img
 	&-title 
 		font-size: 24px
 		+bold
+		text-align: center
 	&-subtitle
 		font-size: 16px
 .input
@@ -42,8 +47,8 @@ img
 	&:focus
 		background-color: 
 		border: 1px solid $main-color
-@media (max-width: 576px)
 	.button
 		border-radius: 5px
 		margin: 0
+
 

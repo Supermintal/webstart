@@ -98,13 +98,14 @@
 @media (max-width: 768px)
 	.hero
 		&-block
-			justify-content: flex-start
+			justify-content: center
 			display: flex
-			align-items: center
+			flex-direction: column
 		&-text
 			flex-direction: column
 			display: flex
 			align-items: center
+			justify-content: center
 			&__title 
 				font-size: 24px
 				line-height: 1.4
@@ -114,6 +115,10 @@
 		&__image
 			margin-left: auto
 			margin-right: auto
+			display: flex
+			width: 270px
+			height: 231px
+			
 @media (max-width: 576px)
 	.hero
 		margin: 0
@@ -125,7 +130,7 @@
 		&-text
 			flex-direction: column
 			display: flex
-			align-items: flex-start
+			align-items: center
 			justify-content: center
 			&__title 
 				font-size: 24px
@@ -139,6 +144,7 @@
 				margin-bottom: 0
 		&-list
 			margin: 0
+			margin-top: 0
 			&__item
 				font-size: 12px
 				margin-top: 28px
@@ -151,12 +157,14 @@
 				margin-right: 15px
 		&-image
 			margin-right: 18px
-			margin-left: 0
+			margin-left: 15px
 			margin-top: 42px
 			padding: 5px
 			margin-bottom: 52px
 			background-color: white
 			box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
+			width: 270px
+			height: 231px
 				
 
 

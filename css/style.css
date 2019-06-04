@@ -260,48 +260,77 @@ img {
 }
 
 @media (max-width: 1200px) {
-  .hero-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .hero-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .hero-list {
-    margin-bottom: 44px;
-  }
-  .hero-text {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+    height: 320px;
+    margin-left: 150px;
+    margin-top: 10%;
+    -webkit-box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+            box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
   }
   .hero-text__title {
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
   }
-  .hero__image {
-    margin-left: auto;
-    margin-right: auto;
+  .hero-text__subtitle {
+    font-size: 15px;
+    line-height: 1;
+  }
+  .hero-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-list__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-list__text {
+    line-height: 1.2;
+    font-size: 13px;
+  }
+  .hero-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 @media (max-width: 768px) {
   .hero-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -350,6 +379,9 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .hero-text {
     -webkit-box-orient: vertical;
@@ -490,6 +522,7 @@ img {
 
 @media (max-width: 1200px) {
   .offer {
+    height: 700px;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -497,6 +530,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 10px;
   }
   .offer__block {
     margin-bottom: 30px;
@@ -647,7 +681,7 @@ img {
 
 .portfolio__title {
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 92px;
   padding-top: 90px;
   line-height: 45px;
   font-size: 30px;
@@ -657,7 +691,7 @@ img {
 .portfolio__arrows {
   max-width: 120px;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,11 +702,14 @@ img {
 
 .slider {
   margin: auto;
+  width: 102%;
+  height: 102%;
+  margin-top: 35px;
 }
 
-@media (max-width: 1200px) {
-  .portfolio__title {
-    margin-top: 33px;
+@media (max-width: 768px) {
+  .slider__image {
+    margin: auto;
   }
 }
 

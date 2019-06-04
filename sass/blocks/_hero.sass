@@ -48,25 +48,57 @@
 		box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)	
 @media (max-width: 1200px)
 	.hero
-		&-block
-			flex-direction: column
+		&-image
 			display: flex
-			align-items: center
-		&-list
-			margin-bottom: 44px
+			justify-content: center
+			width: 50%
+			height: 320px
+			margin-left: 150px
+			margin-top: 10%
+			box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
 		&-text
-			flex-direction: column
-			display: flex
-			align-items: center
 			&__title
-				font-size: 30px
-		&__image
-			margin-left: auto
-			margin-right: auto
+				font-size: 20px
+				line-height: 1.4
+				margin-bottom: 20px
+			&__subtitle
+				font-size: 15px
+				line-height: 1
+		&-list
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			justify-content: center
+			&__image
+				display: flex
+				justify-content: center
+				align-items: center
+			&__text
+				line-height: 1.2
+				font-size: 13px
+			&__item
+				display: flex
+				justify-content: flex-start
+				align-items: center
+		// &-block
+		// 	flex-direction: column
+		// 	display: flex
+		// 	align-items: center
+		// &-list
+		// 	margin-bottom: 44px
+		// &-text
+		// 	flex-direction: column
+		// 	display: flex
+		// 	align-items: center
+		// 	&__title
+		// 		font-size: 30px
+		// &__image
+		// 	margin-left: auto
+		// 	margin-right: auto
 @media (max-width: 768px)
 	.hero
 		&-block
-			flex-direction: column
+			justify-content: flex-start
 			display: flex
 			align-items: center
 		&-text
@@ -89,6 +121,7 @@
 			flex-direction: column
 			display: flex
 			align-items: center
+			justify-content: center
 		&-text
 			flex-direction: column
 			display: flex

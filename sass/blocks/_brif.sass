@@ -1,0 +1,117 @@
+.brif
+	height: 660px
+	background-image: url('../../img/brif/bgc.jpg'), url('../../img/brif/bgc-img.jpg')
+	background-position: left center, center right
+	background-size: 50% ,contain
+	background-repeat: repeat-y, no-repeat
+	&-block
+		display: flex
+		flex-basis: 50%
+		margin-top: 19px
+	&__interview
+		flex-basis: 50%
+	&__form
+		flex-basis: 50%
+		padding-left: 185px
+		text-align: center
+	&__input
+		width: 100%
+		max-width: 370px
+		margin-bottom: 12px
+		padding-top: 25px
+		padding-bottom: 25px
+		display: inline-block
+	&__button
+		height: 70px
+		max-width: 370px
+		width: 100%
+		margin-top: 15px
+		margin-bottom: 30px
+	&__button
+		+bold
+		font-size: 16px
+.interview
+	&__title
+		font-size: 22px
+		line-height: 33px
+		margin-bottom: 42px
+		width: 600px
+		+bold
+	&__subtitle
+		display: block
+		font-size: 16px
+		margin-bottom: 94px
+	&-list 
+		list-style: none
+		padding: 0
+		&__item
+			display: flex
+			align-items: center
+			+bold
+			margin-bottom: 26px
+			margin-left: -2px
+			&:last-child
+				margin-top: 43px
+		&__counter
+			display: inline-block
+			text-align: center
+			line-height: 35px
+			font-size: 14px
+			width: 35px
+			height: 35px
+			border: 2px solid $text-color
+			margin-right: 30px
+			border-radius: 50%
+		&__text
+			max-width: 400px
+			font-size: 18px
+.form
+	&__title 
+		font-size: 22px
+		line-height: 33px
+		margin-bottom: 42px
+		margin-top: 20px
+		width: 400px
+		+bold
+	&__subtitle
+		display: block
+		font-size: 16px
+		margin-bottom: 50px
+	&__description
+		display: block
+		font-size: 15px
+@media (max-width: 1200px)
+	.brif
+		&__form
+			padding-left: 30px
+	.interview
+		padding-right: 30px
+		&__title
+			font-size: 20px
+			margin-bottom: 15px
+		&__subtitle
+			margin-bottom: 30px
+		&-list
+			&__text
+				font-size: 14px
+				max-width: 300px
+			&__counter
+				margin-right: 20px
+	.form
+			&__title
+				font-size: 20px
+				margin-bottom: 15px
+			&__subtitle
+				margin-bottom: 30px
+@media (max-width: 768px)
+	.brif
+		background-image: url('../../img/brif/bgc.jpg'), url('../../img/brif/bgc-img.jpg')
+		background-position: top center, center bottom 
+		background-size: 100% 50%, cover
+		background-repeat: repeat-x, no-repeat
+		&-block
+			flex-direction: column
+			margin-top: 80px
+	.form
+		&__description
+			display: block

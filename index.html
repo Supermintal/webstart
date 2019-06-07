@@ -10,6 +10,12 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Yandex.Metrika counter -->
+	<script
+		type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(53967127, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/53967127" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript> <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -24,7 +30,7 @@
 						<span class="navbar__address">Калуга, Москва, МО</span>
 						<a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
 					</div>
-					<button class="button navbar__button" id="button">Перезвоните мне</button>
+					<button class="button navbar__button" onclick="ym(53967127, 'reachGoal', 'button'); return true;" id="button">Перезвоните мне</button>
 				</div>
 			</div>
 		</div>
@@ -73,7 +79,7 @@
 						дизайн-проекта!</span>
 					<form action="#" class="form offer__form">
 						<input type="text" name="username" required minlength="2" maxlength="15" class="input offer__input" placeholder="Ваше имя">
-						<input type="tel" class="input offer__input phone" placeholder="Ваш телефон">
+						<input type="tel" class="input offer__input phone" required placeholder="Ваш телефон">
 						<button class="button offer__button">Получить бесплатный дизайн-проект</button>
 					</form>
 					<div class="offer-class">
@@ -234,7 +240,7 @@
 							</li>
 							<li class="interview-list__item">
 								<span class="interview-list__counter">3</span>
-								<span	class="interview-list__text">Где находится помещение, в котором будет производиться ремонт?</span>
+								<span	class="interview-list__text interview-list__text_3">Где находится помещение, в котором будет производиться ремонт?</span>
 							</li>
 							<li class="interview-list__item">
 								<span class="interview-list__counter">4</span>
@@ -247,7 +253,7 @@
 						<span class="form__subtitle">Для этого заполните форму ниже</span>
 						<form action="#" id="brif-form">
 							<input type="text" name="username"  minlength="2" maxlength="15" class="input brif__input" placeholder="Ваше имя">
-							<input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+							<input type="tel" name="phone" required class="input brif__input phone" placeholder="Ваш телефон">
 							<input type="email" name="email" class="input brif__input" placeholder="Ваш email">
 							<button class="button brif__button">Расcчитать стоимость</button>
 							<span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
@@ -256,6 +262,43 @@
 				</div>
 			</div>
 		</section>
+		<footer class="footer">
+			<div class="map" id="map">
+				<script type="text/javascript" charset="utf-8" async
+					src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A049039ae37d0a35250464ccbe14afefd30f717720b1aafac516fe0dd91a40de3&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+			</div>
+			<div class="container">
+				<div class="contacts-block">
+					<div class="contacts">
+						<h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас<br>по всем вопросам ремонта</h3>
+					<ul class="contacts-list">
+						<li class="li contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="img/footer/map-placeholder.png">
+							</span>
+							<span class="contacts-list__text">г. Москва<br>
+							<b>ул. Ленинга, д. 10,<br>
+							корпус 2, оф. 308</b></span>
+						</li>
+						<li class="li contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="img/footer/clock-with-white-face.png">
+							</span>
+							<span class="contacts-list__text">Режим работы:<br>
+							<b>с 9:00 до 18:00</b></span>
+						</li>
+						<li class="li contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="img/footer/phone-call-button.png">
+							</span>
+							<span class="contacts-list__text">Телефон:<br>
+							<a href="tel:+ 7 (495) 42-251-31" class="footer__phone">+ 7 (495) 42-251-31</a></span>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</main>
 
 	<div class="modal" id="modal">
@@ -282,6 +325,7 @@
 			$('#brif-form').validate({
 				rules: {
 					username: "required",
+					phone: "required",
 					email:{
 						required: true,
 						email: true
@@ -289,7 +333,8 @@
 				},
 				messages: {
 					username: "Укажите имя",
-				  email: "Укажите email"
+				  email: "Укажите корректный email",
+					phone: "Укажите номер телефона"
 				}
 			 });
 			 /*Маска ждя телефона*/

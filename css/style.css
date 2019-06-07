@@ -686,7 +686,7 @@ img {
 }
 
 .portfolio {
-  background: #f5f5f5 url("../../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
   background-size: 50%;
 }
 
@@ -879,7 +879,7 @@ img {
   width: 72px;
   height: 25px;
   position: absolute;
-  background: url("../../img/steps/arrow.png") no-repeat center;
+  background: url("../img/steps/arrow.png") no-repeat center;
   top: -10px;
   right: -15%;
 }
@@ -979,7 +979,7 @@ img {
 
 .brif {
   height: 660px;
-  background-image: url("../../img/brif/bgc.jpg"), url("../../img/brif/bgc-img.jpg");
+  background-image: url("../img/brif/bgc.jpg"), url("../img/brif/bgc-img.jpg");
   background-position: left center, center right;
   background-size: 50% ,contain;
   background-repeat: repeat-y, no-repeat;
@@ -1060,7 +1060,11 @@ img {
 }
 
 .interview-list__item:last-child {
-  margin-top: 43px;
+  margin-top: 35px;
+}
+
+.interview-list__item:nth-child(3) {
+  margin-top: 30px;
 }
 
 .interview-list__counter {
@@ -1071,13 +1075,17 @@ img {
   width: 35px;
   height: 35px;
   border: 2px solid #333333;
-  margin-right: 30px;
+  margin-right: 32px;
   border-radius: 50%;
 }
 
 .interview-list__text {
   max-width: 400px;
   font-size: 18px;
+}
+
+.interview-list__text_3 {
+  margin-top: 6px;
 }
 
 .form__title {
@@ -1101,6 +1109,10 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .brif {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .brif__form {
     padding-left: 30px;
   }
@@ -1146,6 +1158,82 @@ img {
   }
   .form__description {
     display: block;
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.footer__phone {
+  text-decoration: none;
+  font-family: 'Museo Sans Cyrl 700';
+  color: #333333;
+  font-size: 16px;
+}
+
+.map {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 70px;
+  padding-left: 210px;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Cyrl 700';
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 91px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 29px;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__text {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
   }
 }
 /*# sourceMappingURL=style.css.map */

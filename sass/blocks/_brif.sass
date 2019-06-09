@@ -2,7 +2,7 @@
 	height: 660px
 	background-image: url('../img/brif/bgc.jpg'), url('../img/brif/bgc-img.jpg')
 	background-position: left center, center right
-	background-size: 50% ,contain
+	background-size: 50% ,cover
 	background-repeat: repeat-y, no-repeat
 	&-block
 		display: flex
@@ -53,7 +53,7 @@
 			&:last-child
 				margin-top: 35px
 			&:nth-child(3)
-				margin-top: 30px
+				margin-top: 27px
 		&__counter
 			display: inline-block
 			text-align: center
@@ -86,14 +86,14 @@
 		font-size: 15px
 @media (max-width: 1200px)
 	.brif
-		flex-wrap: wrap
+		height: 100%
 		&__form
 			padding-left: 30px
 	.interview
-		padding-right: 30px
 		&__title
 			font-size: 20px
 			margin-bottom: 15px
+			max-width: 391px
 		&__subtitle
 			margin-bottom: 30px
 		&-list
@@ -103,20 +103,93 @@
 			&__counter
 				margin-right: 20px
 	.form
-			&__title
-				font-size: 20px
-				margin-bottom: 15px
-			&__subtitle
-				margin-bottom: 30px
+		&__title
+			font-size: 20px
+			margin-bottom: 15px
+		&__subtitle
+			margin-bottom: 30px
 @media (max-width: 768px)
 	.brif
-		background-image: url('../../img/brif/bgc.jpg'), url('../../img/brif/bgc-img.jpg')
+		height: 100%
+		background-image: url('../img/brif/bgc.jpg'), url('../img/brif/bgc-img.jpg')
 		background-position: top center, center bottom 
 		background-size: 100% 50%, cover
 		background-repeat: repeat-x, no-repeat
 		&-block
 			flex-direction: column
-			margin-top: 80px
+			align-items: center
+		&__form
+			margin-top: 60px
+			display: flex
+			flex-direction: column
+			align-items: center
+	.interview
+		&__title
+			font-size: 18px
+			max-width: 216px
 	.form
+		&__title
+			font-size: 18px
+			max-width: 277px
+@media (max-width: 576px)
+	.brif
+		height: 100%
+		background-image: url('../img/brif/bgc.jpg'), url('../img/brif/bgc-img.jpg')
+		background-position: top center, center bottom 
+		background-size: 320px 508px, cover
+		background-repeat: repeat-x, no-repeat
+		&-block
+			flex-direction: column
+			align-items: center
+		&__form
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding: 0
+			max-width: 275px
+		&__input
+			height: 65px
+			margin-bottom: 9px
+			padding-left: 20px
+	.interview
+		margin-left: 6px
+		&__title
+			font-size: 18px
+			max-width: 217px
+			line-height: 1.2
+			margin-top: -33px
+		&__subtitle
+			max-width: 173px
+			font-size: 14px
+			margin-bottom: 40px
+		&-list
+			&__item
+				font-size: 14px
+				max-width: 300px
+				&:last-child
+					margin-top: -5px
+				&:nth-child(2)
+					margin-top: 13px
+				&:nth-child(3)
+					margin-top: -8px
+			&__counter
+				margin-right: 8px
+			&__text
+				max-width: 239px
+				&_3
+					max-width: 184px
+	.form
+		&__title
+			font-size: 18px
+			max-width: 277px
+			margin-top: 40px
+			line-height: 25.35px
+			margin-bottom: 21px
+		&__subtitle
+			font-size: 14px
+			margin-bottom: 34px
 		&__description
-			display: block
+			max-width: 150px
+			margin: auto
+			line-height: 24px
+
